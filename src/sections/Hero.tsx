@@ -9,9 +9,9 @@ export const Hero = () => {
     <section className='pt-8 pb-20 md:pt-5 md:pb-10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_100%)] overflow-x-clip '>
       <div className='container'>
         <div className='md:flex items-center'>
-          <div className='md:w-[478px]'>
+          <div className='md:w-[478px] lg:w-[511px] xl:w-[50%]'>
             <div className='tag'>Version 2.0 is here</div>
-            <h1 className='text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-6'>
+            <h1 className='text-5xl md:text-7xl lg:text-[90px] font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-6'>
               Pathway to productivity
             </h1>
             <p className='text-xl text-[#010D3E] tracking-tight mt-6'>
