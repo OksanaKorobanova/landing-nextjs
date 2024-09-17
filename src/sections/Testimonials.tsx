@@ -126,7 +126,7 @@ const TestimonialsColumn = ({
   );
 };
 
-export const Testimonials = () => {
+const Testimonials = () => {
   return (
     <section className='bg-white'>
       <div className='container'>
@@ -157,3 +157,5 @@ export const Testimonials = () => {
     </section>
   );
 };
+
+export default Testimonials;

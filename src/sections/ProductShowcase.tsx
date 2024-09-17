@@ -5,8 +5,56 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import productImg from '@/assets/product-image.png';
 import pyramidImg from '@/assets/pyramid.png';
 import tubeImg from '@/assets/tube.png';
+import LeafeIcon from '@/assets/leafe.svg';
+import GoalIcon from '@/assets/goal.svg';
+import SecureIcon from '@/assets/secure.svg';
+import NotificationIcon from '@/assets/notification.svg';
+import ArrowRight from '@/assets/arrow-right.svg';
+import Link from 'next/link';
 
-export const ProductShowcase = () => {
+const additionalFeatures = [
+  {
+    icon: 'LeafeIcon',
+    title: 'Integration ecosystem',
+    text: 'Track your progress and motivate your efforts everyday.',
+    link: '',
+  },
+  {
+    icon: 'GoalIcon',
+    title: 'Goal setting and tracking',
+    text: 'Set and track goals with manageable task breakdowns.',
+    link: '',
+  },
+  {
+    icon: 'SecureIcon',
+    title: 'Secure data encryption',
+    text: 'Ensure your data is safe with top-tier encryption.',
+    link: '',
+  },
+  {
+    icon: 'NotificationIcon',
+    title: 'Customizable notifications',
+    text: 'Get alerts on tasks and deadlines that matter most.',
+    link: '',
+  },
+];
+
+const returnIcon = (icon: string) => {
+  switch (icon) {
+    case 'LeafeIcon':
+      return <LeafeIcon />;
+    case 'GoalIcon':
+      return <GoalIcon />;
+    case 'SecureIcon':
+      return <SecureIcon />;
+    case 'NotificationIcon':
+      return <NotificationIcon />;
+    default:
+      break;
+  }
+};
+
+const ProductShowcase = () => {
   const sectionRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -55,7 +103,30 @@ export const ProductShowcase = () => {
             }}
           />
         </div>
+        <div className='flex flex-col md:flex-row gap-5 mt-5 items-center flex-wrap md:justify-center'>
+          {additionalFeatures.map(({ icon, title, text, link }) => {
+            return (
+              <div key={text} className='w-[260px] py-10'>
+                {returnIcon(icon)}
+                <h4 className='font-bold text-lg tracking-tighter mt-2.5'>
+                  {title}
+                </h4>
+                <p className='mt-2.5 text-[16px] leading-[23px] tracking-tight'>
+                  {text}
+                </p>
+                <Link
+                  href={link}
+                  className='btn btn-text-small gap-1 text-[16px] leading-[23px]'>
+                  <span>Learn more</span>
+                  <ArrowRight className='w-5 h-5' />
+                </Link>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </section>
   );
 };
+
+export default ProductShowcase;

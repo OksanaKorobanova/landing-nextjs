@@ -5,7 +5,7 @@ import starImg from '@/assets/star.png';
 import springImg from '@/assets/spring.png';
 import { useRef } from 'react';
 
-export const CallToAction = () => {
+const CallToAction = () => {
   const sectionRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -53,3 +53,5 @@ export const CallToAction = () => {
     </section>
   );
 };
+
+export default CallToAction;

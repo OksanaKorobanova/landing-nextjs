@@ -6,7 +6,7 @@ import SocialInsta from '@/assets/social-insta.svg';
 import SocialPin from '@/assets/social-pin.svg';
 import SocialYootube from '@/assets/social-youtube.svg';
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <footer className='bg-black text-[#BCBCBC] text-sm py-10 text-center'>
       <div className='container'>
@@ -36,3 +36,5 @@ export const Footer = () => {
     </footer>
   );
 };
+
+export default Footer;

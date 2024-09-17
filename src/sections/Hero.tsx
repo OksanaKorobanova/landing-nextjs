@@ -6,7 +6,7 @@ import cogImg from '@/assets/cog.png';
 import cylinderImg from '@/assets/cylinder.png';
 import noodleImg from '@/assets/noodle.png';
 
-export const Hero = () => {
+const Hero = () => {
   const heroRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: heroRef,
@@ -80,3 +80,5 @@ export const Hero = () => {
     </section>
   );
 };
+
+export default Hero;
