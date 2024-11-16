@@ -1,6 +1,6 @@
-# Next.js Landing page with animations
+# SaaS Landing Page with animations
 
-Fullstack Inventory Management Dashboard (Next.js, Postgres, Node, Tailwind, EC2, RDS, S3)
+SaaS Landing Page with React, Next.js, TailwindCSS & Framer Motion. Deployed on Vercel
 
 ## Tech Stack
 
@@ -11,7 +11,7 @@ Fullstack Inventory Management Dashboard (Next.js, Postgres, Node, Tailwind, EC2
 
 ## Screens
 
-![Landing page](https://raw.githubusercontent.com/OksanaKorobanova/landing-nextjs/refs/heads/master/public/sass-landing.png)
+![Landing page](https://raw.githubusercontent.com/OksanaKorobanova/landing-nextjs/refs/heads/main/public/sass-landing.png)
 
 ## Getting Started
 
